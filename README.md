@@ -4,7 +4,7 @@ Practical application comparing **K-Nearest Neighbors**, **Logistic Regression**
 
 ## Overview
 
-The goal is to predict whether a client will subscribe to a **term deposit** (binary classification) using bank client features. The notebook walks through data understanding, feature engineering, baseline and model comparison, and hyperparameter tuning.
+The goal is to predict whether a client will subscribe to a **term deposit** (binary classification) using bank client features. The notebook walks through data understanding, feature engineering, baseline and model comparison, hyperparameter tuning, and visualizations for each model.
 
 ## Dataset
 
@@ -17,11 +17,12 @@ The goal is to predict whether a client will subscribe to a **term deposit** (bi
 - Python 3.x
 - pandas
 - scikit-learn
+- matplotlib
 
 Install with:
 
 ```bash
-pip install pandas scikit-learn
+pip install pandas scikit-learn matplotlib
 ```
 
 ## Usage
@@ -29,6 +30,19 @@ pip install pandas scikit-learn
 1. Open `prompt_III.ipynb` in Jupyter Notebook or JupyterLab (or run in VS Code / Cursor).
 2. Ensure the dataset is at `data/bank-additional/bank-additional-full.csv` relative to the notebook.
 3. Run all cells in order.
+4. Outputs (tables and plots) are written to the `results/` folder.
+
+## Outputs
+
+After running the notebook, the `results/` directory contains:
+
+| File | Description |
+|------|-------------|
+| `model_comparison.csv` | Train time, train accuracy, test accuracy for LR, KNN, Decision Tree, SVM |
+| `tuned_models.csv` | Test accuracy and Test F1 for tuned KNN, Decision Tree, SVM |
+| `model_comparison_plots.png` | Train vs test accuracy, training time, and confusion matrices per model |
+| `model_roc_curves.png` | ROC curves and AUC for each model |
+| `tuned_models_plots.png` | Test accuracy and F1 bar charts for tuned models |
 
 ## Notebook Structure
 
@@ -39,8 +53,8 @@ pip install pandas scikit-learn
 | Problem 6 | Train/test split |
 | Problem 7 | Baseline (majority class) |
 | Problems 8–9 | Logistic Regression model and scoring |
-| Problem 10 | Compare LR, KNN, Decision Tree, SVM (train time & accuracy) |
-| Problem 11 | Hyperparameter tuning (GridSearchCV) and F1 comparison |
+| Problem 10 | Compare LR, KNN, Decision Tree, SVM; save table; **plots**: accuracy, train time, confusion matrices, ROC curves |
+| Problem 11 | Hyperparameter tuning (GridSearchCV), F1 comparison; save table; **plots**: tuned model accuracy and F1 |
 
 ## Citation
 
