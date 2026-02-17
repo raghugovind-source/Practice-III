@@ -42,6 +42,8 @@ After running the notebook, the `results/` directory contains:
 | `tuned_models.csv` | Test accuracy and Test F1 for tuned KNN, Decision Tree, SVM |
 | `model_comparison_plots.png` | Train vs test accuracy, training time, and confusion matrices per model |
 | `model_roc_curves.png` | ROC curves and AUC for each model |
+| `cross_validation_scores.csv` | 5-fold CV mean and std accuracy per model |
+| `cross_validation_plots.png` | Box plot of CV fold scores and bar chart of mean CV accuracy ± std |
 | `tuned_models_plots.png` | Test accuracy and F1 bar charts for tuned models |
 
 ## Notebook Structure
@@ -53,7 +55,7 @@ After running the notebook, the `results/` directory contains:
 | Problem 6 | Train/test split |
 | Problem 7 | Baseline (majority class) |
 | Problems 8–9 | Logistic Regression model and scoring |
-| Problem 10 | Compare LR, KNN, Decision Tree, SVM; save table; **plots**: accuracy, train time, confusion matrices, ROC curves |
+| Problem 10 | Compare LR, KNN, Decision Tree, SVM; save table; **plots**: accuracy, train time, confusion matrices, ROC curves; **cross-validation**: 5-fold CV with box plot and mean±std bar chart |
 | Problem 11 | Hyperparameter tuning (GridSearchCV), F1 comparison; save table; **plots**: tuned model accuracy and F1 |
 
 ## Citation

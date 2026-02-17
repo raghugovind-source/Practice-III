@@ -1,0 +1,4 @@
+Model,Test Accuracy,Test F1
+KNN (tuned),0.8693,0.135
+Decision Tree (tuned),0.8667,0.1271
+SVM (tuned),0.8846,0.0278
